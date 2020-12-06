@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="preload" href="fonts/Montserrat-Regular.ttf" as="font" crossorigin="crossorigin"/>
+    <link rel="preload" href="fonts/Montserrat-Medium.ttf" as="font" crossorigin="crossorigin"/>
+    <link rel="preload" href="fonts/Montserrat-SemiBold.ttf" as="font" crossorigin="crossorigin"/>
+    <link rel="preload" href="fonts/Montserrat-Bold.ttf" as="font" crossorigin="crossorigin"/>
+    <link rel="preload" href="fonts/Montserrat-Black.ttf" as="font" crossorigin="crossorigin"/>
+    <link rel="preload" href="img/sprite.svg" as="image" crossorigin="crossorigin"/>
+    <link rel="preload" href="css/main.min.css" as="style"/>
+    <link rel="preload" href="libs/libs.min.js" as="script"/>
+    <link rel="preload" href="js/common.js" as="script"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png"/>
+    <link rel="manifest" href="img/site.webmanifest"/>
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5"/>
+    <meta name="msapplication-TileColor" content="#da532c"/>
+    <meta name="theme-color" content="#ffffff"/>
+    <title>Статьи</title>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="google" content="notranslate"/>
+    <link rel="stylesheet" href="css/main.min.css"/>
+  </head>
+  <body>
+    <div class="mask">
+      <div class="loader"></div>
+    </div><a href="tel:+998977667602" class="callback-bt">
+<div class="text-call">
+    <div class="callback-bt__phone">
+      <svg>
+        <use xlink:href="img/sprite.svg#big-phone"></use>
+      </svg>
+    </div><span>Заказать<br>звонок</span>
+</div>
+</a>
+    <div id="hidden-content" style="display: none;"><img class="modal__img" src="img/shape1.png" alt=""/><img class="modal__img" src="img/shape2.png" alt=""/>
+      <div class="modal__top">
+        <h5 class="modal__title">Оставить сейчас заявку,<br>получить <span>10% скидку ,</span><br>и бесплатный выезд!</h5>
+        <p class="modal__text">Мы сразу перезвоним Вам,<br>как получим заявку</p>
+      </div>
+      <div class="modal__bot">
+        <form class="modal__form" action="">
+          <div class="modal__form-inp-wrapper">
+            <input class="modal__form-inp" type="text" placeholder="Имя" autocomplete="off" name="name"/>
+            <div class="modal__form-inp-icon">
+              <svg>
+                <use xlink:href="img/sprite.svg#popup-user"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal__form-inp-wrapper">
+            <input class="modal__form-inp" type="tel" placeholder="Телефон" autocomplete="off" name="phone"/>
+            <div class="modal__form-inp-icon">
+              <svg>
+                <use xlink:href="img/sprite.svg#popup-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <input class="modal__form-btn" type="submit" value="Оформить заявку"/>
+        </form>
+      </div>
+    </div>
+    <div id="hidden-content2" style="display: none;"><img class="modal__img" src="img/shape1.png" alt=""/><img class="modal__img" src="img/shape2.png" alt=""/>
+      <div class="modal__top">
+        <h5 class="modal__title">Оставить сейчас заявку,<br>получить <span>10% скидку ,</span><br>и бесплатный выезд!</h5>
+        <p class="modal__text">Мы сразу перезвоним Вам,<br>как получим заявку</p>
+      </div>
+      <div class="modal__bot">
+        <form class="modal__form" action="">
+          <div class="modal__form-inp-wrapper">
+            <input class="modal__form-inp" type="text" placeholder="Имя" autocomplete="off" name="name"/>
+            <div class="modal__form-inp-icon">
+              <svg>
+                <use xlink:href="img/sprite.svg#popup-user"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal__form-inp-wrapper">
+            <input class="modal__form-inp" type="tel" placeholder="Телефон" autocomplete="off" name="phone"/>
+            <div class="modal__form-inp-icon">
+              <svg>
+                <use xlink:href="img/sprite.svg#popup-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal__form-textare-wrapper">
+            <textarea class="modal__form-textare" placeholder="Сообщение" autocomplete="off" name="message"></textarea>
+            <div class="modal__form-textare-icon">
+              <svg>
+                <use xlink:href="img/sprite.svg#popup-message"></use>
+              </svg>
+            </div>
+          </div>
+          <input class="modal__form-btn" type="submit" value="Оформить заявку"/>
+        </form>
+      </div>
+    </div>
+    <header class="header">
+      <div class="page-section">
+        <div class="header__inner">
+          <div class="header__logo"><a class="header__logo-link" href="./index.html">
+              <picture>
+                <source type="image/webp" srcset="img/logo.webp"/><img class="header__logo-img" src="img/logo.png" alt=""/>
+              </picture></a></div>
+          <ul class="header__nav">
+            <li class="header__nav-item"><a class="header__nav-link" href="./index.html">Главная</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="./index.html#about">О компании</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="./index.html#services">Услуги</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="./gallery.html">Галерея</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="./index.html#reviews">Отзывы</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="./article.html">Статьи</a></li>
+          </ul>
+          <button class="header__burger-menu"><span class="header__burger-menu-top">1</span><span class="header__burger-menu-mid">2</span><span class="header__burger-menu-bot">3</span></button>
+          <div class="header__phone-section"><a class="header__phone" href="tel:+998977667602">+998977667602
+              <div class="header__phone-icon">
+                <svg>
+                  <use xlink:href="img/sprite.svg#small-phone"></use>
+                </svg>
+              </div></a><a class="header__phone" href="tel:+998974297817">+998974297817
+              <div class="header__phone-icon">
+                <svg>
+                  <use xlink:href="img/sprite.svg#small-phone"></use>
+                </svg>
+              </div></a></div>
+          <div class="header__langs">
+            <div class="header__langs-item" data-google-lang="ru">
+              <svg>
+                <use xlink:href="img/sprite.svg#ru-flag"></use>
+              </svg>
+            </div>
+            <div class="header__langs-item" data-google-lang="en">
+              <svg>
+                <use xlink:href="img/sprite.svg#en-flag"></use>
+              </svg>
+            </div>
+            <div class="header__langs-item" data-google-lang="uz">
+              <svg>
+                <use xlink:href="img/sprite.svg#uz-flag"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="states">
+      <div class="container">
+        <h3 class="states__title title">Статьи</h3>
+        <div class="states__inner">
+          <div class="states__item">
+            <div class="states__inner-item">
+              <picture>
+                <source type="image/webp" srcset="img/article-img.webp"/><img class="states__img" src="img/article-img.jpg" alt=""/>
+              </picture>
+              <div class="states__item-date">28.04.2020</div>
+              <h4 class="states__item-title">БОРЬБА С ДОМАШНИМИ ВРЕДИТЕЛИ В ТАШКЕНТЕ</h4>
+              <p class="states__item-text">Борьба с домашними вредителями в Ташкенте Вредители вроде клопов, тараканов скорпионов мух комаров блох скорпионов , в жилых местах очень распространены тараканы. Это наиболее уязвимые места для заражения этими вредителями.</p><a class="states__item-btn" href="#">Читать дальше</a>
+            </div>
+          </div>
+          <div class="states__item">
+            <div class="states__inner-item">
+              <picture>
+                <source type="image/webp" srcset="img/article-img.webp"/><img class="states__img" src="img/article-img.jpg" alt=""/>
+              </picture>
+              <div class="states__item-date">28.04.2020</div>
+              <h4 class="states__item-title">COVID 2019</h4>
+              <p class="states__item-text">Дезинфекция covid 19 в Ташкенте В связи со вспышкой коронавируса по всему миру, обеспечение дезинфекции нас самих и нашего окружения является высшим приоритетом прямо сейчас. В условиях продолжающейся глобальной пандемии...</p><a class="states__item-btn" href="#">Читать дальше</a>
+            </div>
+          </div>
+          <div class="states__item">
+            <div class="states__inner-item">
+              <picture>
+                <source type="image/webp" srcset="img/article-img.webp"/><img class="states__img" src="img/article-img.jpg" alt=""/>
+              </picture>
+              <div class="states__item-date">28.04.2020</div>
+              <h4 class="states__item-title">БОРЬБА С ДОМАШНИМИ ВРЕДИТЕЛИ В ТАШКЕНТЕ</h4>
+              <p class="states__item-text">Борьба с домашними вредителями в Ташкенте Вредители вроде клопов, тараканов скорпионов мух комаров блох скорпионов , в жилых местах очень распространены тараканы. Это наиболее уязвимые места для заражения этими вредителями.</p><a class="states__item-btn" href="#">Читать дальше</a>
+            </div>
+          </div>
+          <div class="states__item">
+            <div class="states__inner-item">
+              <picture>
+                <source type="image/webp" srcset="img/article-img.webp"/><img class="states__img" src="img/article-img.jpg" alt=""/>
+              </picture>
+              <div class="states__item-date">28.04.2020</div>
+              <h4 class="states__item-title">БОРЬБА С ДОМАШНИМИ ВРЕДИТЕЛИ В ТАШКЕНТЕ</h4>
+              <p class="states__item-text">Борьба с домашними вредителями в Ташкенте Вредители вроде клопов, тараканов скорпионов мух комаров блох скорпионов , в жилых местах очень распространены тараканы. Это наиболее уязвимые места для заражения этими вредителями.</p><a class="states__item-btn" href="#">Читать дальше</a>
+            </div>
+          </div>
+          <div class="states__item">
+            <div class="states__inner-item">
+              <picture>
+                <source type="image/webp" srcset="img/article-img.webp"/><img class="states__img" src="img/article-img.jpg" alt=""/>
+              </picture>
+              <div class="states__item-date">28.04.2020</div>
+              <h4 class="states__item-title">COVID 2019</h4>
+              <p class="states__item-text">Дезинфекция covid 19 в Ташкенте В связи со вспышкой коронавируса по всему миру, обеспечение дезинфекции нас самих и нашего окружения является высшим приоритетом прямо сейчас. В условиях продолжающейся глобальной пандемии...</p><a class="states__item-btn" href="#">Читать дальше</a>
+            </div>
+          </div>
+          <div class="states__item">
+            <div class="states__inner-item">
+              <picture>
+                <source type="image/webp" srcset="img/article-img.webp"/><img class="states__img" src="img/article-img.jpg" alt=""/>
+              </picture>
+              <div class="states__item-date">28.04.2020</div>
+              <h4 class="states__item-title">БОРЬБА С ДОМАШНИМИ ВРЕДИТЕЛИ В ТАШКЕНТЕ</h4>
+              <p class="states__item-text">Борьба с домашними вредителями в Ташкенте Вредители вроде клопов, тараканов скорпионов мух комаров блох скорпионов , в жилых местах очень распространены тараканы. Это наиболее уязвимые места для заражения этими вредителями.</p><a class="states__item-btn" href="#">Читать дальше</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="page-section">
+        <div class="footer__inner">
+          <div class="footer__logo"><a class="footer__logo-link" href="./index.html">
+              <picture>
+                <source type="image/webp" srcset="img/logo.webp"/><img class="footer__logo-link" src="img/logo.png" alt=""/>
+              </picture></a></div>
+          <ul class="footer__menu-list">
+            <li class="footer__menu-item"><a class="footer__menu-link" href="./index.html">Главная</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-link" href="./index.html#about">О компании</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-link" href="./index.html#services">Услуги</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-link" href="./gallery.html">Галерея</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-link" href="./index.html#reviews">Отзывы</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-link" href="#">Статьи</a></li>
+          </ul>
+          <div class="footer__mail-section"><a class="footer__mail" href="#">uzdezcontrol@gmail.com
+              <div class="footer__mail-icon">
+                <svg>
+                  <use xlink:href="img/sprite.svg#mail"></use>
+                </svg>
+              </div></a>
+            <div class="footer__schedule">Прием заявок: <span>9:00-23:00</span></div>
+          </div>
+          <div class="footer__phone-section">
+            <div class="footer__phones-icon">
+              <svg>
+                <use xlink:href="img/sprite.svg#small-phone"></use>
+              </svg>
+            </div>
+            <div class="footer__phones"><a class="footer__phone" href="+998977667602">+998977667602</a><a class="footer__phone" href="+998974297817">+998974297817</a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="libs/libs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="//translate.google.com/translate_a/element.js?cb=TranslateInit"></script>
+    <script src="js/common.js"></script>
+  </body>
+</html>

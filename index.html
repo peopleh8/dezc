@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="preload" href="fonts/Montserrat-Regular.ttf" as="font" crossorigin="crossorigin"/>
+    <link rel="preload" href="fonts/Montserrat-Medium.ttf" as="font" crossorigin="crossorigin"/>
+    <link rel="preload" href="fonts/Montserrat-SemiBold.ttf" as="font" crossorigin="crossorigin"/>
+    <link rel="preload" href="fonts/Montserrat-Bold.ttf" as="font" crossorigin="crossorigin"/>
+    <link rel="preload" href="fonts/Montserrat-Black.ttf" as="font" crossorigin="crossorigin"/>
+    <link rel="preload" href="img/sprite.svg" as="image" crossorigin="crossorigin"/>
+    <link rel="preload" href="css/main.min.css" as="style"/>
+    <link rel="preload" href="libs/libs.min.js" as="script"/>
+    <link rel="preload" href="js/common.js" as="script"/>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png"/>
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png"/>
+    <link rel="manifest" href="img/site.webmanifest"/>
+    <link rel="mask-icon" href="img/safari-pinned-tab.svg" color="#5bbad5"/>
+    <meta name="msapplication-TileColor" content="#da532c"/>
+    <meta name="theme-color" content="#ffffff"/>
+    <title>Главная Страница</title>
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+    <meta name="google" content="notranslate"/>
+    <link rel="stylesheet" href="css/main.min.css"/>
+  </head>
+  <body>
+    <div class="mask">
+      <div class="loader"></div>
+    </div><a href="tel:+998977667602" class="callback-bt">
+<div class="text-call">
+    <div class="callback-bt__phone">
+      <svg>
+        <use xlink:href="img/sprite.svg#big-phone"></use>
+      </svg>
+    </div><span>Заказать<br>звонок</span>
+</div>
+</a>
+    <div id="hidden-content" style="display: none;"><img class="modal__img" src="img/shape1.png" alt=""/><img class="modal__img" src="img/shape2.png" alt=""/>
+      <div class="modal__top">
+        <h5 class="modal__title">Оставить сейчас заявку,<br>получить <span>10% скидку ,</span><br>и бесплатный выезд!</h5>
+        <p class="modal__text">Мы сразу перезвоним Вам,<br>как получим заявку</p>
+      </div>
+      <div class="modal__bot">
+        <form class="modal__form" action="">
+          <div class="modal__form-inp-wrapper">
+            <input class="modal__form-inp" type="text" placeholder="Имя" autocomplete="off" name="name"/>
+            <div class="modal__form-inp-icon">
+              <svg>
+                <use xlink:href="img/sprite.svg#popup-user"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal__form-inp-wrapper">
+            <input class="modal__form-inp" type="tel" placeholder="Телефон" autocomplete="off" name="phone"/>
+            <div class="modal__form-inp-icon">
+              <svg>
+                <use xlink:href="img/sprite.svg#popup-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <input class="modal__form-btn" type="submit" value="Оформить заявку"/>
+        </form>
+      </div>
+    </div>
+    <div id="hidden-content2" style="display: none;"><img class="modal__img" src="img/shape1.png" alt=""/><img class="modal__img" src="img/shape2.png" alt=""/>
+      <div class="modal__top">
+        <h5 class="modal__title">Оставить сейчас заявку,<br>получить <span>10% скидку ,</span><br>и бесплатный выезд!</h5>
+        <p class="modal__text">Мы сразу перезвоним Вам,<br>как получим заявку</p>
+      </div>
+      <div class="modal__bot">
+        <form class="modal__form" action="">
+          <div class="modal__form-inp-wrapper">
+            <input class="modal__form-inp" type="text" placeholder="Имя" autocomplete="off" name="name"/>
+            <div class="modal__form-inp-icon">
+              <svg>
+                <use xlink:href="img/sprite.svg#popup-user"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal__form-inp-wrapper">
+            <input class="modal__form-inp" type="tel" placeholder="Телефон" autocomplete="off" name="phone"/>
+            <div class="modal__form-inp-icon">
+              <svg>
+                <use xlink:href="img/sprite.svg#popup-phone"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal__form-textare-wrapper">
+            <textarea class="modal__form-textare" placeholder="Сообщение" autocomplete="off" name="message"></textarea>
+            <div class="modal__form-textare-icon">
+              <svg>
+                <use xlink:href="img/sprite.svg#popup-message"></use>
+              </svg>
+            </div>
+          </div>
+          <input class="modal__form-btn" type="submit" value="Оформить заявку"/>
+        </form>
+      </div>
+    </div>
+    <header class="header">
+      <div class="page-section">
+        <div class="header__inner">
+          <div class="header__logo"><a class="header__logo-link" href="./index.html">
+              <picture>
+                <source type="image/webp" srcset="img/logo.webp"/><img class="header__logo-img" src="img/logo.png" alt=""/>
+              </picture></a></div>
+          <ul class="header__nav">
+            <li class="header__nav-item"><a class="header__nav-link" href="./index.html">Главная</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="./index.html#about">О компании</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="./index.html#services">Услуги</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="./gallery.html">Галерея</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="./index.html#reviews">Отзывы</a></li>
+            <li class="header__nav-item"><a class="header__nav-link" href="./article.html">Статьи</a></li>
+          </ul>
+          <button class="header__burger-menu"><span class="header__burger-menu-top">1</span><span class="header__burger-menu-mid">2</span><span class="header__burger-menu-bot">3</span></button>
+          <div class="header__phone-section"><a class="header__phone" href="tel:+998977667602">+998977667602
+              <div class="header__phone-icon">
+                <svg>
+                  <use xlink:href="img/sprite.svg#small-phone"></use>
+                </svg>
+              </div></a><a class="header__phone" href="tel:+998974297817">+998974297817
+              <div class="header__phone-icon">
+                <svg>
+                  <use xlink:href="img/sprite.svg#small-phone"></use>
+                </svg>
+              </div></a></div>
+          <div class="header__langs">
+            <div class="header__langs-item" data-google-lang="ru">
+              <svg>
+                <use xlink:href="img/sprite.svg#ru-flag"></use>
+              </svg>
+            </div>
+            <div class="header__langs-item" data-google-lang="en">
+              <svg>
+                <use xlink:href="img/sprite.svg#en-flag"></use>
+              </svg>
+            </div>
+            <div class="header__langs-item" data-google-lang="uz">
+              <svg>
+                <use xlink:href="img/sprite.svg#uz-flag"></use>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="intro" style="background-image: url(img/main-bg.webp)" data-bg="img/main-bg.jpg" data-bg-webp="img/main-bg.webp">
+      <div class="infro__social"><a class="intro__social-icon" href="#">
+          <svg>
+            <use xlink:href="img/sprite.svg#telegram"></use>
+          </svg></a><a class="intro__social-icon" href="#">
+          <svg>
+            <use xlink:href="img/sprite.svg#facebook"></use>
+          </svg></a><a class="intro__social-icon" href="#">
+          <svg>
+            <use xlink:href="img/sprite.svg#instagram"></use>
+          </svg></a><a class="intro__social-icon" href="#">
+          <svg>
+            <use xlink:href="img/sprite.svg#youtube"></use>
+          </svg></a></div>
+      <div class="intro__wrapper">
+        <div class="page-section">
+          <div class="intro__inner">
+            <div class="intro__content">
+              <h1 class="intro__title lang" key="title">
+                Уничтожение насекомых<span>в Ташкенте</span></h1>
+              <p class="intro__subtitle lang" key="subtitle"><span>Бесплатный</span> вызов специалиста на дом</p>
+              <div class="intro__content-btns"><a class="intro__content-btn" data-fancybox="data-fancybox" data-src="#hidden-content2" href="javascript:;">Оставить заявку</a><a data-fancybox data-src="#hidden-content" href="javascript:;" class="intro__content-btn">
+<span>Заказать Звонок</span>
+</a>
+              </div>
+            </div>
+            <div class="intro__photo">
+              <picture>
+                <source type="image/webp" srcset="img/man.webp"/><img class="intro__photo-img" src="img/man.png" alt=""/>
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="guarantees">
+      <div class="container">
+        <div class="guarantees__inner">
+          <div class="guarantees__item">
+            <div class="guarantees__icon" data-aos="fade-in">
+              <div class="guarantees__icon-inner">
+                <svg>
+                  <use xlink:href="img/sprite.svg#like"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="guarantees__text" data-aos="fade-up">Гарантия качества</div>
+          </div>
+          <div class="guarantees__item">
+            <div class="guarantees__icon" data-aos="fade-in">
+              <div class="guarantees__icon-inner">
+                <svg>
+                  <use xlink:href="img/sprite.svg#mail-lock"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="guarantees__text" data-aos="fade-up">Полная конфиденциальность</div>
+          </div>
+          <div class="guarantees__item">
+            <div class="guarantees__icon" data-aos="fade-in">
+              <div class="guarantees__icon-inner">
+                <svg>
+                  <use xlink:href="img/sprite.svg#hands-heart"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="guarantees__text" data-aos="fade-up">Безопасность для людей и животных</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="srcvices" id="services">
+      <div class="container">
+        <h3 class="services__title title" data-aos="zoom-in">Наши Услуги</h3>
+        <div class="srcvices__inner">
+          <div class="srcvices__item">
+            <div class="srcvices__icon" data-aos="fade-down">
+              <picture>
+                <source type="image/webp" srcset="img/ser-1.webp"/><img class="services__img" src="img/ser-1.jpg" alt=""/>
+              </picture>
+            </div>
+            <h5 class="srcvices__title" data-aos="fade-in">Дезинфекция</h5>
+            <p class="srcvices__desc" data-aos="fade-up">Уничтожение и профилактика болезнетворных вирусов и бактерий</p>
+          </div>
+          <div class="srcvices__item">
+            <div class="srcvices__icon" data-aos="fade-down">
+              <picture>
+                <source type="image/webp" srcset="img/ser-2.webp"/><img class="services__img" src="img/ser-2.jpg" alt=""/>
+              </picture>
+            </div>
+            <h5 class="srcvices__title" data-aos="fade-in">Дезинсекция</h5>
+            <p class="srcvices__desc" data-aos="fade-up">Санитарная обработка помещения направленная на полное уничтожение насекомых</p>
+          </div>
+          <div class="srcvices__item">
+            <div class="srcvices__icon" data-aos="fade-down">
+              <picture>
+                <source type="image/webp" srcset="img/ser-3.webp"/><img class="services__img" src="img/ser-3.jpg" alt=""/>
+              </picture>
+            </div>
+            <h5 class="srcvices__title" data-aos="fade-in">Дератизация</h5>
+            <p class="srcvices__desc" data-aos="fade-up">Комплекс мер, направленных на профилактику появления и уничтожение мелких грызунов</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about__inner">
+          <div class="about__photo" data-aos="fade-left">
+            <picture>
+              <source type="image/webp" srcset="img/mask.webp"/><img class="about__img" src="img/mask.jpg" alt=""/>
+            </picture>
+          </div>
+          <h3 class="about__title title" data-aos="fade-right">О нашей компании</h3>
+          <p class="about__desc" data-aos="fade-right">Не знаете, как гарантировано избавиться от постельных клопов в квартире, неприятных тараканов в доме, кусачих блох в подвале, вездесущих муравьев на даче, болезнетворных микроорганизмов в помещении? Выход есть: дезинфекция в Ташкенте от клопов нашей компании. Мы – профессионалы! На рынке санитарных услуг Узбекистана мы успешно работаем более 9 лет. За это время мы проявили себя как надежный и ответственный исполнитель. Для проведения дезинфекционных услуг у нас имеется специальная лицензия. В своей работе мы используем только сертифицированные препараты. </p>
+          <p class="about__desc" data-aos="fade-right">Не знаете, как гарантировано избавиться от постельных клопов в квартире, неприятных тараканов в доме, кусачих блох в подвале, вездесущих муравьев на даче, болезнетворных микроорганизмов в помещении? Выход есть: дезинфекция в Ташкенте от клопов нашей компании. Мы – профессионалы! На рынке санитарных услуг Узбекистана мы успешно работаем более 9 лет. За это время мы проявили себя как надежный и ответственный исполнитель. Для проведения дезинфекционных услуг у нас имеется специальная лицензия. В своей работе мы используем только сертифицированные препараты.</p>
+          <p class="about__desc" data-aos="fade-right">Не знаете, как гарантировано избавиться от постельных клопов в квартире, неприятных тараканов в доме, кусачих блох в подвале, вездесущих муравьев на даче, болезнетворных микроорганизмов в помещении? Выход есть: дезинфекция в Ташкенте от клопов нашей компании. Мы – профессионалы! На рынке санитарных услуг Узбекистана мы успешно работаем более 9 лет. За это время мы проявили себя как надежный и ответственный исполнитель. Для проведения дезинфекционных услуг у нас имеется специальная лицензия. В своей работе мы используем только сертифицированные препараты. </p>
+        </div>
+      </div>
+    </section>
+    <section class="videos">
+      <div class="container">
+        <div class="videos__inner">
+          <div class="videos__video" data-aos="fade-right"><iframe class="video" src="https://www.youtube.com/embed/6qRglIgFNkQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="videos__video-preview-icon">
+              <svg>
+                <use xlink:href="img/sprite.svg#play"></use>
+              </svg>
+            </div>
+            <div class="videos__video-preview">
+              <picture>
+                <source type="image/webp" srcset="img/video-preview-2.webp"/><img class="videos__video-preview-img" src="img/video-preview-2.jpg" alt=""/>
+              </picture>
+            </div>
+          </div>
+          <div class="videos__content" data-aos="fade-left">
+            <h3 class="videos__title title">Обработка помещений холодным паром</h3>
+            <p class="videos__content-subtitle">Dezcontrol проводит дезинфекцию холодным туманом в Ташкенте и области на птицефабриках, общепитах, на фермах, в цехах, в теплицах, в садах и автотранспорте. Главное условие для дезинфекции – в помещении не должны проживать люди. Использовать холодный туман в квартирах и частных домах не рекомендуется.</p>
+            <div class="videos__content-obj">
+              <div class="videos__content-obj-count">146</div>
+              <div class="videos__content-obj-text">Объектов обработано за год</div>
+            </div><a data-fancybox data-src="#hidden-content" href="javascript:;" class="videos__content-btn">
+<span>Заказать Услугу</span>
+</a>
+          </div>
+        </div>
+        <div class="videos__inner">
+          <div class="videos__content" data-aos="fade-left">
+            <h3 class="videos__title title">Обработка помещений холодным паром</h3>
+            <p class="videos__content-subtitle">Dezcontrol проводит дезинфекцию холодным туманом в Ташкенте и области на птицефабриках, общепитах, на фермах, в цехах, в теплицах, в садах и автотранспорте. Главное условие для дезинфекции – в помещении не должны проживать люди. Использовать холодный туман в квартирах и частных домах не рекомендуется.</p>
+            <div class="videos__content-obj">
+              <div class="videos__content-obj-count">30</div>
+              <div class="videos__content-obj-text">Минут на обработку квартиры</div>
+            </div><a href="tel:+998977667602" class="videos__content-btn videos__content-btn--dark">
+<span>Позвонить +998977667602</span>
+</a>
+          </div>
+          <div class="videos__video" data-aos="fade-right"><iframe class="video" src="https://www.youtube.com/embed/6qRglIgFNkQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="videos__video-preview-icon">
+              <svg>
+                <use xlink:href="img/sprite.svg#play"></use>
+              </svg>
+            </div>
+            <div class="videos__video-preview">
+              <picture>
+                <source type="image/webp" srcset="img/video-preview-1.webp"/><img class="videos__video-preview-img" src="img/video-preview-1.jpg" alt=""/>
+              </picture>
+            </div>
+          </div>
+        </div>
+        <div class="videos__inner">
+          <div class="videos__video" data-aos="fade-right"><iframe class="video" src="https://www.youtube.com/embed/6qRglIgFNkQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <div class="videos__video-preview-icon">
+              <svg>
+                <use xlink:href="img/sprite.svg#play"></use>
+              </svg>
+            </div>
+            <div class="videos__video-preview">
+              <picture>
+                <source type="image/webp" srcset="img/video-preview-3.webp"/><img class="videos__video-preview-img" src="img/video-preview-3.jpg" alt=""/>
+              </picture>
+            </div>
+          </div>
+          <div class="videos__content" data-aos="fade-left">
+            <h3 class="videos__title title">Обработка помещений холодным паром</h3>
+            <p class="videos__content-subtitle">Dezcontrol проводит дезинфекцию холодным туманом в Ташкенте и области на птицефабриках, общепитах, на фермах, в цехах, в теплицах, в садах и автотранспорте. Главное условие для дезинфекции – в помещении не должны проживать люди. Использовать холодный туман в квартирах и частных домах не рекомендуется.</p>
+            <div class="videos__content-obj">
+              <div class="videos__content-obj-count">6000</div>
+              <div class="videos__content-obj-text">Довольных клиентов</div>
+            </div><a data-fancybox data-src="#hidden-content2" href="javascript:;" class="videos__content-btn">
+<span>Задать Вопрос</span>
+</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="devices">
+      <div class="container">
+        <h3 class="devices__title title" data-aos="zoom-in">Наше оборудование</h3>
+        <div class="devices__inner">
+          <div class="devices__item" data-aos="fade-right">
+            <div class="devices__icon">
+              <picture>
+                <source type="image/webp" srcset="img/dev-1.webp"/><img class="devices__img" src="img/dev-1.jpg" alt=""/>
+              </picture>
+            </div>
+            <p class="devices__desc"><span>Генератор</span> холодного тумана</p>
+          </div>
+          <div class="devices__item" data-aos="fade-right" data-aos-delay="200">
+            <div class="devices__icon">
+              <picture>
+                <source type="image/webp" srcset="img/dev-2.webp"/><img class="devices__img" src="img/dev-2.jpg" alt=""/>
+              </picture>
+            </div>
+            <p class="devices__desc"><span>Опрыскиватель</span> помповый ручной 8 л.</p>
+          </div>
+          <div class="devices__item" data-aos="fade-right" data-aos-delay="400">
+            <div class="devices__icon">
+              <picture>
+                <source type="image/webp" srcset="img/dev-3.webp"/><img class="devices__img" src="img/dev-3.jpg" alt=""/>
+              </picture>
+            </div>
+            <p class="devices__desc"><span>Генератор</span> горячего тумана</p>
+          </div>
+          <div class="devices__item" data-aos="fade-right" data-aos-delay="600">
+            <div class="devices__icon">
+              <picture>
+                <source type="image/webp" srcset="img/dev-4.webp"/><img class="devices__img" src="img/dev-4.jpg" alt=""/>
+              </picture>
+            </div>
+            <p class="devices__desc"><span>Генератор</span> холодного тумана</p>
+          </div>
+          <div class="devices__item" data-aos="fade-left" data-aos-delay="600">
+            <div class="devices__icon">
+              <picture>
+                <source type="image/webp" srcset="img/dev-5.webp"/><img class="devices__img" src="img/dev-5.jpg" alt=""/>
+              </picture>
+            </div>
+            <p class="devices__desc"><span>Ксулат С25</span> – это микрокапсулированное инсектицидное средство острого действия. Препарат представляет собой суспензию мутно белого цвета. </p>
+          </div>
+          <div class="devices__item" data-aos="fade-left" data-aos-delay="400">
+            <div class="devices__icon">
+              <picture>
+                <source type="image/webp" srcset="img/dev-6.webp"/><img class="devices__img" src="img/dev-6.jpg" alt=""/>
+              </picture>
+            </div>
+            <p class="devices__desc"><span>Экокиллер</span> – это инсектицид для борьбы с бытовыми насекомыми. Спектр действия препарата очень широкий. Он безопасен и удобен в применении, отличается надежным защитным действием, имеет стремительный «стоп-эффект».</p>
+          </div>
+          <div class="devices__item" data-aos="fade-left" data-aos-delay="200">
+            <div class="devices__icon">
+              <picture>
+                <source type="image/webp" srcset="img/dev-7.webp"/><img class="devices__img" src="img/dev-7.jpg" alt=""/>
+              </picture>
+            </div>
+            <p class="devices__desc">Средство <span>"Экстермин-инсектоакарицид к.э."</span> – это эффективный препарат, предоставляющий возможность быстро избавиться от постельных клопов, блох, мух, муравьев.</p>
+          </div>
+          <div class="devices__item" data-aos="fade-left">
+            <div class="devices__icon">
+              <picture>
+                <source type="image/webp" srcset="img/dev-8.webp"/><img class="devices__img" src="img/dev-8.jpg" alt=""/>
+              </picture>
+            </div>
+            <p class="devices__desc">Препарат для дезинфекции <span>«Циперметрин»</span> – это эффектное антимикробное средство, предоставляющее возможность бороться с вирусами различных заболеваний, возбудителями</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="benefits">
+      <div class="page-section">
+        <h3 class="benefits__title title" data-aos="zoom-in">Наши преимущества</h3>
+        <div class="benefits__inner">
+          <div class="benefits__item-wrapper" data-aos="fade-right">
+            <div class="benefits__item">
+              <h4 class="benefits__item-title">24/7</h4>
+            </div>
+          </div>
+          <div class="benefits__item-wrapper" data-aos="fade-right" data-aos-delay="200">
+            <div class="benefits__item">
+              <h4 class="benefits__item-title">10</h4>
+              <div class="benefits__desc">Лет на рынке</div>
+            </div>
+          </div>
+          <div class="benefits__item-wrapper" data-aos="fade-left" data-aos-delay="200">
+            <div class="benefits__item">
+              <h4 class="benefits__item-title">6000+</h4>
+              <div class="benefits__desc">Довольных клиентов</div>
+            </div>
+          </div>
+          <div class="benefits__item-wrapper" data-aos="fade-left">
+            <div class="benefits__item">
+              <h4 class="benefits__item-title">30</h4>
+              <div class="benefits__desc">Минут на обработку квартиры</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="reason">
+      <div class="container">
+        <h3 class="reason__title title" data-aos="fade-right">Почему стоит выбрать нашу службу дезинфекции</h3>
+        <div class="reason__inner">
+          <div class="reason__item" data-aos="fade-up">
+            <div class="reason__icon">
+              <div class="reason__icon-inner">
+                <svg>
+                  <use xlink:href="img/sprite.svg#coin"></use>
+                </svg>
+              </div>
+            </div>
+            <h5 class="reason__item-title">Доступные цены</h5>
+            <p class="reason__desc">Время обработки не более 40 минут. Работаем без пятен и разводов (ремонт и мебель не пострадают).</p>
+          </div>
+          <div class="reason__item" data-aos="fade-up" data-aos-delay="200">
+            <div class="reason__icon">
+              <div class="reason__icon-inner">
+                <svg>
+                  <use xlink:href="img/sprite.svg#clock"></use>
+                </svg>
+              </div>
+            </div>
+            <h5 class="reason__item-title">100% результат за один час</h5>
+            <p class="reason__desc">Уничтожение насекомых происходит уже через один час после начала проведения работ.</p>
+          </div>
+          <div class="reason__item" data-aos="fade-up" data-aos-delay="400">
+            <div class="reason__icon">
+              <div class="reason__icon-inner">
+                <svg>
+                  <use xlink:href="img/sprite.svg#heart-hand-2"></use>
+                </svg>
+              </div>
+            </div>
+            <h5 class="reason__item-title">Барьерная защита</h5>
+            <p class="reason__desc">Используемые нами препараты имеют длительное остаточное действие (до 10 недель).</p>
+          </div>
+          <div class="reason__item" data-aos="fade-up" data-aos-delay="400">
+            <div class="reason__icon">
+              <div class="reason__icon-inner">
+                <svg>
+                  <use xlink:href="img/sprite.svg#flask"></use>
+                </svg>
+              </div>
+            </div>
+            <h5 class="reason__item-title">Быстро и чисто</h5>
+            <p class="reason__desc"> Мы – лидеры рынка, поэтому с нами работают лучшие дезинфекторы, отбор проходят 20 человек на место.</p>
+          </div>
+          <div class="reason__item" data-aos="fade-up" data-aos-delay="200">
+            <div class="reason__icon">
+              <div class="reason__icon-inner">
+                <svg>
+                  <use xlink:href="img/sprite.svg#clean"></use>
+                </svg>
+              </div>
+            </div>
+            <h5 class="reason__item-title">Барьерная защита</h5>
+            <p class="reason__desc">Барьерная оброботка от проникновения насекомых от соседей при заказе любой услуги</p>
+          </div>
+          <div class="reason__item" data-aos="fade-up">
+            <div class="reason__icon">
+              <div class="reason__icon-inner">
+                <svg>
+                  <use xlink:href="img/sprite.svg#clock"></use>
+                </svg>
+              </div>
+            </div>
+            <h5 class="reason__item-title">100% результат за один час</h5>
+            <p class="reason__desc">Время обработки не более 40 минут. Работаем без пятен и разводов (ремонт и мебель не пострадают).</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="gellery">
+      <div class="page-section">
+        <h3 class="gellery__title title">Галерея наших работ</h3>
+        <div class="gellery__inner"><a class="gellery__item" href="img/gal-1.png" data-fancybox="gallery"><img class="gellery__img" src="img/gal-1.png" alt=""/>
+            <div class="gellery__icon">
+              <svg>
+                <use xlink:href="img/sprite.svg#zoom"></use>
+              </svg>
+            </div></a><a class="gellery__item" href="img/gal-2.png" data-fancybox="gallery"><img class="gellery__img" src="img/gal-2.png" alt=""/>
+            <div class="gellery__icon">
+              <svg>
+                <use xlink:href="img/sprite.svg#zoom"></use>
+              </svg>
+            </div></a><a class="gellery__item" href="img/gal-3.png" data-fancybox="gallery"><img class="gellery__img" src="img/gal-3.png" alt=""/>
+            <div class="gellery__icon">
+              <svg>
+                <use xlink:href="img/sprite.svg#zoom"></use>
+              </svg>
+            </div></a></div>
+        <div class="gallery__btn-wrapper"><a class="gallery__btn" href="./gallery.html">Перейти в галерею</a></div>
+      </div>
+    </section>
+    <section class="reviews" id="reviews" style="background-image: url(img/reviews-bg.webp)" data-bg="img/reviews-bg.jpg" data-bg-webp="img/reviews-bg.webp">
+      <div class="container">
+        <h3 class="reviews__title title">Отзывы наших клиентов</h3>
+        <div class="reviews__slider">
+          <div class="reviews__slider-item">
+            <div class="reviews__slider-item-inner">
+              <div class="reviews__slider-icon">
+                <picture>
+                  <source type="image/webp" srcset="img/rew-1.webp"/><img class="reviews__slider-img" src="img/rew-1.jpg" alt=""/>
+                </picture>
+              </div>
+              <div class="reviews__slider-name">Александр Владимирович</div>
+              <div class="reviews__slider-date">27.10.2020</div>
+              <p class="reviews__slider-review">Еще один приятный опыт с Dezcontrol Service.Они опрыскали двор,чтобы убить скорпионов и их яйца. Всё прошло очень хорошо.парень пришёл вовремя,был вежливым и полезным. Эти ребята очень опытны. Гарантируют свою работу,всегда вовремя с улыбкой. Я могу смело их рекомендовать в любое время. Продолжайте хорошую работу.</p>
+            </div>
+          </div>
+          <div class="reviews__slider-item">
+            <div class="reviews__slider-item-inner">
+              <div class="reviews__slider-icon">
+                <picture>
+                  <source type="image/webp" srcset="img/rew-2.webp"/><img class="reviews__slider-img" src="img/rew-2.jpg" alt=""/>
+                </picture>
+              </div>
+              <div class="reviews__slider-name">Мария Садовникова</div>
+              <div class="reviews__slider-date">15.4.2016</div>
+              <p class="reviews__slider-review">В ресторане было очень много тараканов,боялись что увидят посетители заведения или проверяющие службы оштрафуют. Вызывали много служб дезинфекции,но эффекта было мало. Я думала,что нам уже никто не сможет помочь,но Dezcontrol Service убедил нас в обратном. Уже 6 год сотрудничаем с ними гарантии гарантии.</p>
+            </div>
+          </div>
+          <div class="reviews__slider-item">
+            <div class="reviews__slider-item-inner">
+              <div class="reviews__slider-icon">
+                <picture>
+                  <source type="image/webp" srcset="img/rew-3.webp"/><img class="reviews__slider-img" src="img/rew-3.jpg" alt=""/>
+                </picture>
+              </div>
+              <div class="reviews__slider-name">Владимир Максимов</div>
+              <div class="reviews__slider-date">27.6.2019</div>
+              <p class="reviews__slider-review">Наш случай был очень проблематичный,нужна была обработка целого подьезда со всеми квартирами. К таким вещамотнеслись очень серьезно,и остановили свой выбор на этой компании. Их сотрудники проявили себя очень квалификовано ы профессионально. Все было сделано достойно,а главное,один год гарантии! </p>
+            </div>
+          </div>
+          <div class="reviews__slider-item">
+            <div class="reviews__slider-item-inner">
+              <div class="reviews__slider-icon">
+                <picture>
+                  <source type="image/webp" srcset="img/rew-2.webp"/><img class="reviews__slider-img" src="img/rew-2.jpg" alt=""/>
+                </picture>
+              </div>
+              <div class="reviews__slider-name">Владимир Максимов</div>
+              <div class="reviews__slider-date">27.6.2019</div>
+              <p class="reviews__slider-review">Наш случай был очень проблематичный,нужна была обработка целого подьезда со всеми квартирами. К таким вещамотнеслись очень серьезно,и остановили свой выбор на этой компании. Их сотрудники проявили себя очень квалификовано ы профессионально. Все было сделано достойно,а главное,один год гарантии!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="paretners">
+      <div class="page-section">
+        <h3 class="paretners__title title">нам доверяют</h3>
+        <div class="paretners__slider">
+          <div class="paretners__slider-item">
+            <div class="paretners__slider-photo">
+              <picture>
+                <source type="image/webp" srcset="img/par-1.webp"/><img class="paretners__slider-img" src="img/par-1.jpg" alt=""/>
+              </picture>
+            </div>
+          </div>
+          <div class="paretners__slider-item">
+            <div class="paretners__slider-photo">
+              <picture>
+                <source type="image/webp" srcset="img/par-2.webp"/><img class="paretners__slider-img" src="img/par-2.jpg" alt=""/>
+              </picture>
+            </div>
+          </div>
+          <div class="paretners__slider-item">
+            <div class="paretners__slider-photo">
+              <picture>
+                <source type="image/webp" srcset="img/par-3.webp"/><img class="paretners__slider-img" src="img/par-3.jpg" alt=""/>
+              </picture>
+            </div>
+          </div>
+          <div class="paretners__slider-item">
+            <div class="paretners__slider-photo">
+              <picture>
+                <source type="image/webp" srcset="img/par-4.webp"/><img class="paretners__slider-img" src="img/par-4.jpg" alt=""/>
+              </picture>
+            </div>
+          </div>
+          <div class="paretners__slider-item">
+            <div class="paretners__slider-photo">
+              <picture>
+                <source type="image/webp" srcset="img/par-3.webp"/><img class="paretners__slider-img" src="img/par-3.jpg" alt=""/>
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="questions">
+      <div class="container">
+        <h3 class="questions__title title">часто задающие вопросы</h3>
+        <div class="questions__inner">
+          <div class="questions__photo" data-aos="fade-right">
+            <picture>
+              <source type="image/webp" srcset="img/woman.webp"/><img class="questions__img" src="img/woman.png" alt=""/>
+            </picture>
+          </div>
+          <div class="questions__content">
+            <div class="questions__accordion">
+              <div class="questions__accordion-item" data-aos="fade-left">
+                <div class="questions__accordion-head">Существуют ли препараты без запаха от клопов и тараканов
+                  <div class="questions__accordion-head-icon">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#plus"></use>
+                    </svg>
+                  </div>
+                </div>
+                <ol class="questions__accordion-body">
+                  <li class="questions__accordion-body-item">Существуют ли препараты без запаха от клопов и тараканов1</li>
+                  <li class="questions__accordion-body-item">Существуют ли препараты без запаха от клопов и тараканов2</li>
+                  <li class="questions__accordion-body-item">Существуют ли препараты без запаха от клопов и тараканов3</li>
+                </ol>
+              </div>
+              <div class="questions__accordion-item" data-aos="fade-left">
+                <div class="questions__accordion-head">Существуют ли препараты без запаха от клопов и тараканов
+                  <div class="questions__accordion-head-icon">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#plus"></use>
+                    </svg>
+                  </div>
+                </div>
+                <ol class="questions__accordion-body">
+                  <li class="questions__accordion-body-item">Существуют ли препараты без запаха от клопов и тараканов1</li>
+                  <li class="questions__accordion-body-item">Существуют ли препараты без запаха от клопов и тараканов2</li>
+                  <li class="questions__accordion-body-item">Существуют ли препараты без запаха от клопов и тараканов3</li>
+                </ol>
+              </div>
+              <div class="questions__accordion-item" data-aos="fade-left">
+                <div class="questions__accordion-head">Существуют ли препараты без запаха от клопов и тараканов
+                  <div class="questions__accordion-head-icon">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#plus"></use>
+                    </svg>
+                  </div>
+                </div>
+                <ol class="questions__accordion-body">
+                  <li class="questions__accordion-body-item">Существуют ли препараты без запаха от клопов и тараканов1</li>
+                  <li class="questions__accordion-body-item">Существуют ли препараты без запаха от клопов и тараканов2</li>
+                  <li class="questions__accordion-body-item">Существуют ли препараты без запаха от клопов и тараканов3</li>
+                </ol>
+              </div>
+              <div class="questions__accordion-item" data-aos="fade-left">
+                <div class="questions__accordion-head">Существуют ли препараты без запаха от клопов и тараканов
+                  <div class="questions__accordion-head-icon">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#plus"></use>
+                    </svg>
+                  </div>
+                </div>
+                <ol class="questions__accordion-body">
+                  <li class="questions__accordion-body-item">Существуют ли препараты без запаха от клопов и тараканов1</li>
+                  <li class="questions__accordion-body-item">Существуют ли препараты без запаха от клопов и тараканов2</li>
+                  <li class="questions__accordion-body-item">Существуют ли препараты без запаха от клопов и тараканов3</li>
+                </ol>
+              </div>
+              <div class="questions__accordion-item" data-aos="fade-left">
+                <div class="questions__accordion-head">Существуют ли препараты без запаха от клопов и тараканов
+                  <div class="questions__accordion-head-icon">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#plus"></use>
+                    </svg>
+                  </div>
+                </div>
+                <ol class="questions__accordion-body">
+                  <li class="questions__accordion-body-item">Существуют ли препараты без запаха от клопов и тараканов1</li>
+                  <li class="questions__accordion-body-item">Существуют ли препараты без запаха от клопов и тараканов2</li>
+                  <li class="questions__accordion-body-item">Существуют ли препараты без запаха от клопов и тараканов3</li>
+                </ol>
+              </div>
+              <div class="questions__accordion-item" data-aos="fade-left">
+                <div class="questions__accordion-head">Существуют ли препараты без запаха от клопов и тараканов
+                  <div class="questions__accordion-head-icon">
+                    <svg>
+                      <use xlink:href="img/sprite.svg#plus"></use>
+                    </svg>
+                  </div>
+                </div>
+                <ol class="questions__accordion-body">
+                  <li class="questions__accordion-body-item">Существуют ли препараты без запаха от клопов и тараканов1</li>
+                  <li class="questions__accordion-body-item">Существуют ли препараты без запаха от клопов и тараканов2</li>
+                  <li class="questions__accordion-body-item">Существуют ли препараты без запаха от клопов и тараканов3</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sale">
+      <div class="container">
+        <div class="sale__timer">
+          <div class="sale__timer-content">
+            <h3 class="sale__timer-title title" data-aos="fade-down">Оставьте заявку сейчас и получите <span>cкидку&nbsp;10%</span></h3>
+            <ul class="sale__timer-content-list">
+              <li class="sale__timer-content-item" data-aos="fade-down" data-aos-delay="200">Всем, кто оставит заявку прямо сейчас с этого сайта предоставляется скидка 10%
+                <div class="sale__timer-content-item-icon">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#arrow"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="sale__timer-content-item" data-aos="fade-down" data-aos-delay="400">После с вами свяжется специалист и бесплатно вас проконсультирует
+                <div class="sale__timer-content-item-icon">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#arrow"></use>
+                  </svg>
+                </div>
+              </li>
+              <li class="sale__timer-content-item" data-aos="fade-down" data-aos-delay="600">После вы получите бесплатный просчет вашего помещения, участка либо объекта
+                <div class="sale__timer-content-item-icon">
+                  <svg>
+                    <use xlink:href="img/sprite.svg#arrow"></use>
+                  </svg>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="sale__timer-counter">
+            <h3 class="sale__timer-counter-title title" data-aos="fade-left">ДО КОНЦА АКЦИИ ОСТАЛОСЬ:</h3>
+            <div class="sale__timer-counter-inner">
+              <div class="sale__timer-counter-item">
+                <div class="sale__timer-counter-item-inner">
+                  <div class="sale__timer-counter-digit days">25</div>
+                  <div class="sale__timer-counter-name">Дни</div>
+                </div>
+              </div>
+              <div class="sale__timer-counter-item">
+                <div class="sale__timer-counter-item-inner">
+                  <div class="sale__timer-counter-digit hours">17</div>
+                  <div class="sale__timer-counter-name">Часы</div>
+                </div>
+              </div>
+              <div class="sale__timer-counter-item">
+                <div class="sale__timer-counter-item-inner">
+                  <div class="sale__timer-counter-digit minutes">38</div>
+                  <div class="sale__timer-counter-name">Минуты</div>
+                </div>
+              </div>
+              <div class="sale__timer-counter-item">
+                <div class="sale__timer-counter-item-inner">
+                  <div class="sale__timer-counter-digit seconds">47</div>
+                  <div class="sale__timer-counter-name">Секунды</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sale__inner">
+          <div class="sale__photo" data-aos="fade-right" data-aos-duration="1000">
+            <picture>
+              <source type="image/webp" srcset="img/car.webp"/><img class="sale__img" src="img/car.png" alt=""/>
+            </picture>
+          </div>
+          <div class="sale__content">
+            <h3 class="sale__title" data-aos="fade-down">Оставив сейчас заявку, вы получите <span>10%&nbsp;скидку,</span> и бесплатный выезд!</h3>
+            <p class="sale__desc" data-aos="fade-down" data-aos-delay="200">С вами свяжеться специалист и бесплатно вас проконсультирует. Заявки принимаем с <span>9:00&nbsp;до&nbsp;23:00</span></p>
+            <form class="sale__form" action="" data-aos="fade-down" data-aos-delay="400">
+              <div class="sale__form-inp-wrapper">
+                <input class="sale__form-inp" type="text" autocomplete="off" placeholder="Ваше Имя" name="name"/>
+                <div class="sale__form-inp-border"></div>
+              </div>
+              <div class="sale__form-inp-wrapper">
+                <input class="sale__form-inp" type="tel" autocomplete="off" placeholder="Ваш Телефон" name="phone"/>
+                <div class="sale__form-inp-border"></div>
+              </div>
+              <button class="sale__form-bnt" type="submit">получить скидку</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58692.05630643007!2d69.20613621744778!3d41.3130386327168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38ae8b01cc505575%3A0x37dd40664c270d03!2z0KfQuNC70LDQvdC30LDRgNGB0LrQuNC5INGA0LDQudC-0L0sINCi0LDRiNC60LXQvdGCLCDQo9C30LHQtdC60LjRgdGC0LDQvQ!5e0!3m2!1sru!2sua!4v1603835071436!5m2!1sru!2sua" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></section>
+    <footer class="footer">
+      <div class="page-section">
+        <div class="footer__inner">
+          <div class="footer__logo"><a class="footer__logo-link" href="./index.html">
+              <picture>
+                <source type="image/webp" srcset="img/logo.webp"/><img class="footer__logo-link" src="img/logo.png" alt=""/>
+              </picture></a></div>
+          <ul class="footer__menu-list">
+            <li class="footer__menu-item"><a class="footer__menu-link" href="./index.html">Главная</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-link" href="./index.html#about">О компании</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-link" href="./index.html#services">Услуги</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-link" href="./gallery.html">Галерея</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-link" href="./index.html#reviews">Отзывы</a></li>
+            <li class="footer__menu-item"><a class="footer__menu-link" href="#">Статьи</a></li>
+          </ul>
+          <div class="footer__mail-section"><a class="footer__mail" href="#">uzdezcontrol@gmail.com
+              <div class="footer__mail-icon">
+                <svg>
+                  <use xlink:href="img/sprite.svg#mail"></use>
+                </svg>
+              </div></a>
+            <div class="footer__schedule">Прием заявок: <span>9:00-23:00</span></div>
+          </div>
+          <div class="footer__phone-section">
+            <div class="footer__phones-icon">
+              <svg>
+                <use xlink:href="img/sprite.svg#small-phone"></use>
+              </svg>
+            </div>
+            <div class="footer__phones"><a class="footer__phone" href="+998977667602">+998977667602</a><a class="footer__phone" href="+998974297817">+998974297817</a></div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="libs/libs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script src="//translate.google.com/translate_a/element.js?cb=TranslateInit"></script>
+    <script src="js/common.js"></script>
+  </body>
+</html>
